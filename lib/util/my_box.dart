@@ -9,16 +9,16 @@ class MyBox extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(9),
           child: Text(
-            'Title',
+            'Titles',
             style: TextStyle(
               fontSize: 25,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          color: Colors.grey[800],
+          color: Colors.grey[200],
         ),
       ),
     );

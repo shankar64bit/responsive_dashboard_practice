@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../util/my_box.dart';
 import '../util/my_tile.dart';
+import 'package:responsive_dashboard_mobile_tab_desktop/id_card.dart';
 
 class DesktopScaffold extends StatefulWidget {
   const DesktopScaffold({Key? key}) : super(key: key);
@@ -49,7 +50,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                   // list of previous days
                   Expanded(
                     child: ListView.builder(
-                      itemCount: 15,
+                      itemCount: 8,
                       itemBuilder: (context, index) {
                         return const MyTile();
                       },
@@ -68,8 +69,27 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       height: 400,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        color: Colors.grey[900],
+                        color: Colors.grey[300],
                       ),
+
+                      // child: Row(
+                      //   crossAxisAlignment: CrossAxisAlignment.start,
+                      //   mainAxisAlignment: MainAxisAlignment.center,
+                      //   children: const [
+                      //     Padding(
+                      //       padding: EdgeInsets.all(10),
+                      //       child: Text(
+                      //         'ID CARD',
+                      //         style: TextStyle(
+                      //           color: Colors.black,
+                      //           fontSize: 20,
+                      //           fontWeight: FontWeight.bold,
+                      //         ),
+                      //         textAlign: TextAlign.center,
+                      //       ),
+                      //     ),
+                      //   ],
+                      // ),
                     ),
                   ),
 
@@ -80,7 +100,7 @@ class _DesktopScaffoldState extends State<DesktopScaffold> {
                       child: Container(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey[900],
+                          color: Colors.grey[300],
                         ),
                       ),
                     ),
